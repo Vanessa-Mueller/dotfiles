@@ -15,7 +15,7 @@ alias -- -="cd -"
 # ref: http://ss64.com/osx/ls.html
 # Long form no user group, color
 alias l="ls -oG"
-alias ll='ls -lh'
+alias ll='ls -lah'
 # Order by last modified, long form no user group, color
 alias lt="ls -toG"
 # List all except . and ..., color, mark file types, long form no user group, file size
@@ -40,6 +40,8 @@ alias hidedotfiles="defaults write com.apple.finder AppleShowAllFiles -bool fals
 
 # resume scp
 alias scpresume='rsync --partial --progress --rsh=ssh'
+
+alias sublime='open /Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl'
 
 # ROOT stuff
 #alias root='/Applications/root/bin/root.exe'

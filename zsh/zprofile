@@ -86,8 +86,12 @@ export PYTHONSTARTUP=$HOME/.pythonrc.py
 # resume scp
 alias scpresume='rsync --partial --progress --rsh=ssh'
 
+# sublime text
+alias subl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl -n -w'
+
 # Mount commands
-mounthome() { sshfs $1:/home/jwishahi /MountPoints/$1-home -o auto_cache,reconnect,volname=$1-home,no_readahead,noappledouble,nolocalcaches}
-umounthome() { umount /MountPoints/$1-home }
+mounthome() { sshfs $1:/home/vmueller ~/Mountpoint/$1-home -o follow_symlinks,auto_cache,reconnect,volname=$1-home,no_readahead,noappledouble,nolocalcaches}
+alias mounthome_lxplus= "sshfs lxplus:/afs/cern.ch/user/v/vamuelle/ ~/Mountpoint/lxplus-home -o auto_cache,reconnect,volname=$1-home,no_readahead,noappledouble,nolocalcaches"
+umounthome() { umount ~/Mountpoint/$1-home }
 #alias setROOT5="pushd $(brew --prefix root) >/dev/null; . libexec/thisroot.sh; popd >/dev/null"
 #alias setROOT6="pushd $(brew --prefix root6) >/dev/null; . libexec/thisroot.sh; popd >/dev/null"

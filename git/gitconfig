@@ -1,16 +1,17 @@
 [user]
-    name  = Julian Wishahi
-    email = julian.wishahi@tu-dortmund.de
+    name  = Vanessa Mueller
+    email = vanessa.mueller@tu-dortmund.de
 
 [push]
-    default = matching
+	default = simple
+
+[pull]
+    rebase = true
 
 [core]
     excludefiles = ~/.gitignore_global
     pager = less -FRSX
     whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
-
-
 
 [color]
     branch = always
