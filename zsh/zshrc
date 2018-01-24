@@ -8,6 +8,8 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # root
-pushd $(brew --prefix root) >/dev/null; . libexec/thisroot.sh; popd >/dev/null
+#pushd $(brew --prefix root) >/dev/null; . libexec/thisroot.sh; popd >/dev/null
 # Customize to your needs...
 #export PATH=/usr/local/bin:/usr/bin:/bin:$PATH
+#
+#echo -ne "\e]1;$HOST\a"
