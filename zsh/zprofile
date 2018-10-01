@@ -89,6 +89,9 @@ alias scpresume='rsync --partial --progress --rsh=ssh'
 # sublime text
 alias subl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl -n -w'
 
+# dooSoftwareSetup
+alias dooSoftwareSetup='source /usr/repos/InstallDooSoftware/LoadDooSoftware -d /usr/repos/InstallDooSoftware'
+
 # Mount commands
 mounthome() { sshfs $1:/home/vmueller ~/Mountpoint/$1-home -o follow_symlinks,auto_cache,reconnect,volname=$1-home,no_readahead,noappledouble,nolocalcaches}
 alias mounthome_lxplus= "sshfs lxplus:/afs/cern.ch/user/v/vamuelle/ ~/Mountpoint/lxplus-home -o auto_cache,reconnect,volname=$1-home,no_readahead,noappledouble,nolocalcaches"
